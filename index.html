@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<title>Pipeline Simulator</title>
+
+	<link rel="canonical" href="" />
+
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/tabela.css">
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+
+<body>
+	<div class="container-fluid position-relative bg bg-light" style="--bs-bg-opacity: .9">
+		<header class="tecen mb-3 border-bottom">
+			<div class="row flex-row justify-content-center">
+				<div class="col-6 justify-content-center">
+					<h1>Simulador de Pipeline</h1>
+					Número de Instruções: <input class="form-input" type="number" id="numero"><br>
+					<div class="my-2">
+						<a class="btn btn-primary text-dark" href="#" onclick="rodarPipeline()">Pipeline</a>
+						<a class="btn btn-primary text-dark" href="#" onclick="rodarSemPipeline()">Sem Pipeline</a>
+						<a class="btn btn-primary text-dark" href="#"
+							onclick="rodarSemPipeline(); rodarPipeline()">Ambos</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="p-3">
+			<div class="row justify-content-center">
+				
+				<div class="col-6 d-flex flex-column align-items-center justify-content-center">
+					<div class="col-12 align-items-center me-2 d-flex text-center">
+						<h2 class="d-flex">Sem usar Pipeline</h2>
+					</div>
+					<div class="col-12 d-flex mb-3 border-bottom overflow-hidden" p-2>
+
+						<table>
+							<tbody>
+								<tr>
+									<td>s1</td>
+								</tr>
+								<tr>
+									<td>s2</td>
+								</tr>
+								<tr>
+									<td>s3</td>
+								</tr>
+								<tr>
+									<td>s4</td>
+								</tr>
+								<tr>
+									<td>s5</td>
+								</tr>
+								<tr>
+									<td>Tempo</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="lista" id="listaSem"></div>
+					</div>
+					<div class="col-12 align-items-center me-2 d-flex">
+						<h2 class="d-flex">Usando Pipeline</h2>
+					</div>
+					<div class="col-12 d-flex mb-3 border-bottom p-2 overflow-hidden">
+
+						<table>
+							<tbody>
+								<tr>
+									<td>s1</td>
+								</tr>
+								<tr>
+									<td>s2</td>
+								</tr>
+								<tr>
+									<td>s3</td>
+								</tr>
+								<tr>
+									<td>s4</td>
+								</tr>
+								<tr>
+									<td>s5</td>
+								</tr>
+								<tr>
+									<td>Tempo</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="lista" id="listaCom"></div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<footer class="border-top">
+			<div class="row justify-content-center">
+				<div class="col-6 text-center">
+					desenvolvido por <a href="http://github.com/gui679">Guilherme C. de Medeiros</a>
+					<br>
+					Modificado por <a href="https://github.com/DevCooperativo">DevCoop</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/simulator-pipeline.js"></script>
+	<script src="js/simulator-sempipeline.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+
+</html>

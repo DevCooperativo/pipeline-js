@@ -1,0 +1,41 @@
+#simulador{
+	position: relative;
+	float: left;
+	width:100%;
+	padding: 0 20%;
+	overflow: hidden;
+	font-family: 'Lobster', cursive;
+}
+
+.estagios{
+	position: relative;
+	display: block;
+	float: left;
+	margin-top: -18px;
+	height: 180px;
+}
+
+.estagios p{
+	margin-bottom: -11px;
+}
+
+.coluna{
+	display: block;
+	width: 20px;
+	margin-left: 5px;
+	transition: .5s;
+	margin-right: 2px;
+
+}
+
+.coluna tr{
+	display: block;
+	height: 24px;
+	text-align: center;
+	border-radius: 6px;
+	margin-bottom: 2px;
+}
+.tempo{
+	color: red;
+	font-size: 22px;
+}
